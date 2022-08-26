@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API APP</title>
+    <link rel="stylesheet" href="api.css">
+</head>
+
+<body>
+    <input type="text" value="s">
+    <button class="submit">submit</button>
+    <div class="container"></div>
+</body>
+<script>
+    let btn=document.querySelector(".submit")
+    let input=document.querySelector("input")
+    let container=document.querySelector(".container")
+    btn.addEventListener("click",function(){
+        fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=chicken
+`)
+.then(response=>response.json())
+.then(data=>{
+    console.log(data);
+})
+    })
+</script>
+</html>
