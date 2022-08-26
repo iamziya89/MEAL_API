@@ -1,74 +1,37 @@
-body{
-    font-size: large;
-    background-color: rgb(45, 149, 114);
+.input-area {
+    display: flex;
+    justify-content: center;
+  }
+  .input-area input {
+    width: 400px;
+    margin-right: 20px;
+    padding: 10px;
+    font-size: 18px;
+  }
+  .input-area button {
+    width: 150px;
   }
   
-  .inputClass{
-      width: 50vh;
-      height: 3vh;
-      padding: 6px;
-      border-radius: 20px;
-      font-size: x-large;
-  }
-
-  .inputClass:hover{
-      border:2px solid rgb(255, 0, 0);
+  .container {
+    width: 1200px;
+    margin: 0 auto;
   }
   
-  .buttonClass{
-      text-align: center; 
-      padding: 5px;
-      background-color: yellow;
-      border: 2px solid rgb(0, 0, 0);
-      font-size: larger;
-      font-weight: 200;
-      border-radius: 20px;
-      align-items: center;
-      justify-content: center;
-  }
-
-  .buttonClass:hover{
-      background-color: red;
-      color: rgb(47, 255, 0);
-      border:2px solid rgb(255, 0, 0);
-      transition: 0.8s;
-  }
-
-  p{
-      display: inline-block;
-  
-  }
-  .hello{
-      border: 2px solid black;
-      margin: 20px;
-      width: 100vh;
-      height: auto;
-  }
-
-  img{
-      width: 100vh;
-      height: 300px;
-      border:none;
-      display: inline-block;
-  }
-
-  h1{
-      margin: 10% 0 0 0 ;
-      text-align: center;
-      color: rgb(92, 7, 202);
+  .container div {
+    margin-top: 30px;
+    border-bottom: 2px solid teal;
   }
   
-  .mainContainer{
-      display: flex;
-      border: 1px solif black;
-      align-items: center;
-      justify-content: center;
+  .container div h1{
+    font-size: 32px;
   }
   
-  .container{
-      display: flex;
-      border: 1px solif black;
-      flex-direction: column;
-      align-items: center;
+  .container div img {
+    width: 300px;
   }
-
+  
+  .container div span {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
